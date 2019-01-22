@@ -1,0 +1,10 @@
+{
+  "namespace": "wmfs",
+  "name": "pizza-blueprint",
+  "version": "1.0",
+  "label": "pizza-blueprint",
+  "author": "WMFS",
+  "organisation": "West Midlands Fire Service",
+  "description": "Blueprint for testing purposes.",
+  "tags": []
+}
