@@ -15,7 +15,7 @@
       "Resource": "module:awaitingHumanInput",
       "ResourceConfig": {
         "uiType": "form",
-        "uiName": "wmfs_pizzaForm",
+        "uiName": "pizza_pizzaForm",
         "dataPath": "$.formData"
       },
       "ResultPath": "$.formData",

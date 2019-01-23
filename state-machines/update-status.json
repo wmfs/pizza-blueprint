@@ -15,7 +15,7 @@
       "Resource": "module:awaitingHumanInput",
       "ResourceConfig": {
         "uiType": "form",
-        "uiName": "wmfs_updateStatusForm",
+        "uiName": "pizza_updateStatusForm",
         "dataPath": "$.formData"
       },
       "ResultPath": "$.formData",

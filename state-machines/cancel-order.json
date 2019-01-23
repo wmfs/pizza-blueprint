@@ -15,7 +15,7 @@
       "Resource": "module:awaitingHumanInput",
       "ResourceConfig": {
         "uiType": "form",
-        "uiName": "wmfs_cancelForm",
+        "uiName": "pizza_cancelForm",
         "dataPath": "$.formData"
       },
       "ResultPath": "$.formData",
