@@ -1,0 +1,43 @@
+{
+  "Comment": "Allows user to place an order for a pizza.",
+  "name": "Place Order",
+  "version": "1.0",
+  "categories": [
+    "pizza"
+  ],
+  "instigators": [
+    "user"
+  ],
+  "StartAt": "FindingById",
+  "States": {
+    "FindingById": {
+      "Type": "Task",
+      "InputPath": "$.boardKeys.pizzaId",
+      "Resource": "module:findingById",
+      "ResourceConfig": {
+        "modelId": "pizza"
+      },
+      "ResultPath": "$.formData",
+      "Next": "AwaitingHumanInput"
+    },
+    "AwaitingHumanInput": {
+      "Type": "Task",
+      "Resource": "module:awaitingHumanInput",
+      "ResourceConfig": {
+        "uiType": "board",
+        "uiName": "pizza_pizzaDetails",
+        "dataPath": "$.formData"
+      },
+      "ResultPath": "$.formData",
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "pizza_customer",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}

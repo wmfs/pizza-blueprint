@@ -10,6 +10,16 @@
   ],
   "StartAt": "AwaitingHumanInput",
   "States": {
+    "FindingById": {
+      "Type": "Task",
+      "InputPath": "$.pizzaId",
+      "Resource": "module:findingById",
+      "ResourceConfig": {
+        "modelId": "pizza"
+      },
+      "ResultPath": "$.formData",
+      "Next": "AwaitingHumanInput"
+    },
     "AwaitingHumanInput": {
       "Type": "Task",
       "Resource": "module:awaitingHumanInput",
@@ -21,12 +31,20 @@
       "ResultPath": "$.formData",
       "Next": "Upserting"
     },
+    "SetStatus": {
+      "Type": "Task",
+      "Resource": "module:runFunction",
+      "ResourceConfig": {
+        "functionName": "setStatus"
+      },
+      "Next": "Upserting"
+    },
     "Upserting": {
       "Type": "Task",
       "InputPath": "$.formData",
       "Resource": "module:upserting",
       "ResourceConfig": {
-        "modelId": "orders"
+        "modelId": "pizza"
       },
       "End": true
     }

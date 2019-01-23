@@ -296,7 +296,7 @@
             },
             {
               "type": "Input.ChoiceSet",
-              "id": "primary",
+              "id": "primaryFlavour",
               "choices": [
                 {
                   "title": "Milk Chocolate",
@@ -321,12 +321,12 @@
               "size": "medium",
               "spacing": "large",
               "text": "What secondary flavour would you like?",
-              "showWhen": "data.primary"
+              "showWhen": "data.primaryFlavour"
             },
             {
               "type": "Input.ChoiceSet",
-              "id": "secondary",
-              "showWhen": "data.primary",
+              "id": "secondaryFlavour",
+              "showWhen": "data.primaryFlavour",
               "choices": [
                 {
                   "title": "Milk Chocolate",
@@ -348,7 +348,7 @@
             },
             {
               "id": "sprinkles",
-              "showWhen": "data.secondary",
+              "showWhen": "data.secondaryFlavour",
               "type": "Input.Toggle",
               "title": "Would you like hundreds and thousands sprinkles on your pizza?",
               "value": false,

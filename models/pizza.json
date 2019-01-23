@@ -58,11 +58,11 @@
         "type": "string"
       }
     },
-    "primary": {
+    "primaryFlavour": {
       "title": "Primary flavour",
       "type": "string"
     },
-    "secondary": {
+    "secondaryFlavour": {
       "title": "Secondary flavour",
       "type": "string"
     },

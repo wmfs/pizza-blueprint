@@ -28,6 +28,20 @@
       "ResourceConfig": {
         "modelId": "pizza"
       },
+      "Next": "GetWatchBoardInputs"
+    },
+    "GetWatchBoardInputs": {
+      "Type": "Task",
+      "Resource": "module:runFunction",
+      "ResourceConfig": {
+        "functionName": "getWatchBoardInputs"
+      },
+      "Next": "WatchBoard"
+    },
+    "WatchBoard": {
+      "Type": "Task",
+      "InputPath": "$.watchBoard",
+      "Resource": "module:watchBoard",
       "End": true
     }
   },

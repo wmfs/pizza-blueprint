@@ -26,7 +26,7 @@
       "InputPath": "$.formData",
       "Resource": "module:upserting",
       "ResourceConfig": {
-        "modelId": "orders"
+        "modelId": "pizza"
       },
       "End": true
     }
