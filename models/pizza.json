@@ -4,6 +4,10 @@
   "description": "A model for storing details of a pizza (recipe, price etc.)",
   "type": "object",
   "properties": {
+    "status": {
+      "title": "Status of the pizza order",
+      "type": "string"
+    },
     "firstName": {
       "title": "First name",
       "type": "string"
