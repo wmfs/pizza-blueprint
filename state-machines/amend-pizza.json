@@ -1,0 +1,52 @@
+{
+  "Comment": "Allows user to amend an order for a pizza.",
+  "name": "Amend Order",
+  "version": "1.0",
+  "categories": [
+    "pizza"
+  ],
+  "instigators": [
+    "user"
+  ],
+  "StartAt": "FindingById",
+  "States": {
+    "FindingById": {
+      "Type": "Task",
+      "InputPath": "$.pizzaId",
+      "Resource": "module:findingById",
+      "ResourceConfig": {
+        "modelId": "pizza"
+      },
+      "ResultPath": "$.formData",
+      "Next": "AwaitingHumanInput"
+    },
+    "AwaitingHumanInput": {
+      "Type": "Task",
+      "Resource": "module:awaitingHumanInput",
+      "ResourceConfig": {
+        "uiType": "form",
+        "uiName": "pizza_pizzaForm",
+        "dataPath": "$.formData"
+      },
+      "ResultPath": "$.formData",
+      "Next": "Upserting"
+    },
+    "Upserting": {
+      "Type": "Task",
+      "InputPath": "$.formData",
+      "Resource": "module:upserting",
+      "ResourceConfig": {
+        "modelId": "pizza"
+      },
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "pizza_customer",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}
