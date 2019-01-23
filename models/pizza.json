@@ -5,11 +5,69 @@
   "type": "object",
   "properties": {
     "firstName": {
-      "title": "First Name of the customer",
+      "title": "First name",
       "type": "string"
     },
     "lastName": {
-      "title": "Last Name of the customer",
+      "title": "Last name",
+      "type": "string"
+    },
+    "phoneNumber": {
+      "title": "Phone number",
+      "type": "integer"
+    },
+    "dietaryReq": {
+      "title": "Dietary requirements",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "dietaryReqOther": {
+      "title": "Other dietary requirements",
+      "type": "string"
+    },
+    "size": {
+      "title": "Size of the pizza",
+      "type": "string"
+    },
+    "savouryOrSweet": {
+      "title": "Type of pizza",
+      "type": "string"
+    },
+    "base": {
+      "title": "Base",
+      "type": "string"
+    },
+    "hot": {
+      "title": "Hot or not?",
+      "type": "boolean"
+    },
+    "howHot": {
+      "title": "Level of heat",
+      "type": "integer"
+    },
+    "toppings": {
+      "title": "Toppings",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "primary": {
+      "title": "Primary flavour",
+      "type": "string"
+    },
+    "secondary": {
+      "title": "Secondary flavour",
+      "type": "string"
+    },
+    "sprinkles": {
+      "title": "Sprinkles or not?",
+      "type": "boolean"
+    },
+    "deliveryOrCollection": {
+      "title": "Delivery or collection?",
       "type": "string"
     }
   },
