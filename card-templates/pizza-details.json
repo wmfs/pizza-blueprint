@@ -40,6 +40,12 @@
         {
           "type": "Chip",
           "color": "accent",
+          "text": "{{data.status}}",
+          "spacing": "small"
+        },
+        {
+          "type": "Chip",
+          "color": "accent",
           "text": "To be {{data.deliveryOrCollection === 'COLLECT' ? 'Collected' : 'Delivered' }}",
           "spacing": "small"
         }

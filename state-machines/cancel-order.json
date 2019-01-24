@@ -26,6 +26,14 @@
         "dataPath": "$.formData"
       },
       "ResultPath": "$.formData",
+      "Next": "SetStatusCancelled"
+    },
+    "SetStatusCancelled": {
+      "Type": "Task",
+      "Resource": "module:runFunction",
+      "ResourceConfig": {
+        "functionName": "setStatusCancelled"
+      },
       "Next": "Upserting"
     },
     "Upserting": {
