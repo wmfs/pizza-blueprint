@@ -14,6 +14,27 @@
       "title": "Customer Details",
       "items": [
         {
+          "type": "Chip",
+          "color": "attention",
+          "text": "Order Cancelled",
+          "spacing": "small",
+          "showWhen": "data.status === 'CANCELLED'"
+        },
+        {
+          "type": "Chip",
+          "color": "warning",
+          "text": "Order Pending",
+          "spacing": "small",
+          "showWhen": "data.status === 'PENDING'"
+        },
+        {
+          "type": "Chip",
+          "color": "good",
+          "text": "Order Complete",
+          "spacing": "small",
+          "showWhen": "data.status === 'COMPLETE'"
+        },
+        {
           "type": "TextBlock",
           "text": "Customer Details",
           "size": "large",
@@ -36,12 +57,6 @@
               "value": "{{data.phoneNumber}}"
             }
           ]
-        },
-        {
-          "type": "Chip",
-          "color": "accent",
-          "text": "{{data.status}}",
-          "spacing": "small"
         },
         {
           "type": "Chip",
@@ -155,11 +170,13 @@
   "actions": [
     {
       "type": "Action.ShowCard",
-      "title": "Amend Order"
+      "title": "Amend Order",
+      "showWhen": "data.status === 'PENDING'"
     },
     {
       "type": "Action.ShowCard",
-      "title": "Cancel Order"
+      "title": "Cancel Order",
+      "showWhen": "data.status === 'PENDING'"
     }
   ],
   "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
