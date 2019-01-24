@@ -1,12 +1,9 @@
 {
-  "Comment": "Allows user to place an order for a pizza.",
-  "name": "Place Order",
+  "Comment": "Allows user to view an order they have made.",
+  "name": "View Order",
   "version": "1.0",
   "categories": [
     "pizza"
-  ],
-  "instigators": [
-    "user"
   ],
   "StartAt": "FindingById",
   "States": {

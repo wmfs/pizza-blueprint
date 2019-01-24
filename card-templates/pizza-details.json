@@ -146,7 +146,16 @@
       ]
     }
   ],
-  "actions": [],
+  "actions": [
+    {
+      "type": "Action.ShowCard",
+      "title": "Amend Order"
+    },
+    {
+      "type": "Action.ShowCard",
+      "title": "Cancel Order"
+    }
+  ],
   "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
   "version": "1.0"
 }
