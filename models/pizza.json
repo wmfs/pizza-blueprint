@@ -33,7 +33,15 @@
     },
     "size": {
       "title": "Size of the pizza",
-      "type": "string"
+      "type": "string",
+      "default": "M",
+      "enum": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ]
     },
     "savouryOrSweet": {
       "title": "Type of pizza",
@@ -41,11 +49,18 @@
     },
     "base": {
       "title": "Base",
-      "type": "string"
+      "type": "string",
+      "default": "TOMATO",
+      "enum": [
+        "TOMATO",
+        "BBQ",
+        "SWEETSOUR"
+      ]
     },
     "hot": {
       "title": "Hot or not?",
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "howHot": {
       "title": "Level of heat",
@@ -68,12 +83,22 @@
     },
     "sprinkles": {
       "title": "Sprinkles or not?",
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "deliveryOrCollection": {
       "title": "Delivery or collection?",
-      "type": "string"
+      "type": "string",
+      "default": "COLLECT",
+      "enum": [
+        "COLLECT",
+        "DELIVER"
+      ]
     }
   },
-  "required": []
+  "required": [
+    "firstName",
+    "lastName",
+    "phoneNumber"
+  ]
 }

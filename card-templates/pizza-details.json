@@ -7,6 +7,143 @@
       "title": "Pizza Place",
       "subtitle": "This is the pizza you ordered.",
       "wash": "black"
+    },
+    {
+      "type": "Container",
+      "id": "customerDetails",
+      "title": "Customer Details",
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "Customer Details",
+          "size": "large",
+          "spacing": "large",
+          "separator": true
+        },
+        {
+          "type": "FactSet",
+          "facts": [
+            {
+              "title": "First Name",
+              "value": "{{data.firstName}}"
+            },
+            {
+              "title": "Last Name",
+              "value": "{{data.lastName}}"
+            },
+            {
+              "title": "Phone Number",
+              "value": "{{data.phoneNumber}}"
+            }
+          ]
+        },
+        {
+          "type": "Chip",
+          "color": "accent",
+          "text": "To be {{data.deliveryOrCollection === 'COLLECT' ? 'Collected' : 'Delivered' }}",
+          "spacing": "small"
+        }
+      ]
+    },
+    {
+      "type": "Container",
+      "id": "dietaryRequirements",
+      "title": "Dietary Requirements",
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "Dietary Requirements",
+          "size": "large",
+          "spacing": "large",
+          "separator": true
+        },
+        {
+          "type": "TextBlock",
+          "text": "{{data.dietaryReq.join(', ')}}"
+        },
+        {
+          "type": "TextBlock",
+          "text": "Other: {{data.dietaryReqOther}}",
+          "showWhen": "data.dietaryReq.includes('OTHER')"
+        }
+      ],
+      "showWhen": "data.dietaryReq.length > 0"
+    },
+    {
+      "type": "Container",
+      "id": "thePizza",
+      "title": "The Pizza",
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "The Pizza",
+          "size": "large",
+          "spacing": "large",
+          "separator": true
+        },
+        {
+          "type": "Container",
+          "title": "Savoury",
+          "showWhen": "data.savouryOrSweet === 'SAVOURY'",
+          "items": [
+            {
+              "type": "FactSet",
+              "facts": [
+                {
+                  "title": "Size",
+                  "value": "{{data.size || 'n/a'}}"
+                },
+                {
+                  "title": "Base",
+                  "value": "{{data.base || 'n/a'}}"
+                },
+                {
+                  "title": "Toppings",
+                  "value": "{{data.toppings.length > 0 ? data.toppings.join(', ') : 'n/a'}}"
+                },
+                {
+                  "type": "FactSet",
+                  "showWhen": "data.hot === true",
+                  "facts": [
+                    {
+                      "title": "Heat",
+                      "value": "{{data.hotHot}} Chillies"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Container",
+          "title": "Sweet",
+          "showWhen": "data.savouryOrSweet === 'SWEET'",
+          "items": [
+            {
+              "type": "FactSet",
+              "facts": [
+                {
+                  "title": "Size",
+                  "value": "{{data.size || 'n/a'}}"
+                },
+                {
+                  "title": "Primary Flavour",
+                  "value": "{{data.primaryFlavour || 'n/a'}}"
+                },
+                {
+                  "title": "Secondary Flavour",
+                  "value": "{{data.secondaryFlavour || 'n/a'}}"
+                },
+                {
+                  "title": "Sprinkles?",
+                  "value": "{{data.sprinkles ? 'Yes' : 'No'}}"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "actions": [],
