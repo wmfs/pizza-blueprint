@@ -5,11 +5,11 @@
   "categories": [
     "pizza"
   ],
-  "StartAt": "AwaitingHumanInput",
+  "StartAt": "FindingById",
   "States": {
     "FindingById": {
       "Type": "Task",
-      "InputPath": "$.pizzaId",
+      "InputPath": "$.boardKeys.pizzaId",
       "Resource": "module:findingById",
       "ResourceConfig": {
         "modelId": "pizza"
@@ -26,14 +26,6 @@
         "dataPath": "$.formData"
       },
       "ResultPath": "$.formData",
-      "Next": "Upserting"
-    },
-    "SetStatus": {
-      "Type": "Task",
-      "Resource": "module:runFunction",
-      "ResourceConfig": {
-        "functionName": "setStatus"
-      },
       "Next": "Upserting"
     },
     "Upserting": {

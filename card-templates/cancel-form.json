@@ -1,7 +1,45 @@
 {
   "type": "AdaptiveCard",
-  "body": [],
-  "actions": [],
+  "body": [
+    {
+      "type": "Jumbotron",
+      "backgroundImage": "wmfs/pizza.jpg",
+      "title": "Pizza Place",
+      "wash": "black"
+    },
+    {
+      "type": "TextBlock",
+      "size": "medium",
+      "text": "Are you sure you want to cancel this order?",
+      "spacing": "large"
+    },
+    {
+      "type": "Input.ChoiceSet",
+      "id": "cancel",
+      "value": true,
+      "choices": [
+        {
+          "title": "Yes",
+          "value": true
+        },
+        {
+          "title": "No",
+          "value": false
+        }
+      ],
+      "style": "expanded"
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "title": "Submit"
+    },
+    {
+      "type": "Action.Cancel",
+      "title": "Cancel"
+    }
+  ],
   "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
   "version": "1.0"
 }
