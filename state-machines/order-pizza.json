@@ -28,19 +28,28 @@
       "ResourceConfig": {
         "modelId": "pizza"
       },
-      "Next": "GetWatchBoardInputs"
+      "Next": "PizzaDescription"
     },
-    "GetWatchBoardInputs": {
+    "PizzaDescription": {
       "Type": "Task",
       "Resource": "module:runFunction",
       "ResourceConfig": {
-        "functionName": "getWatchBoardInputs"
+        "functionName": "pizzaDescription"
       },
       "Next": "WatchBoard"
     },
     "WatchBoard": {
       "Type": "Task",
-      "InputPath": "$.watchBoard",
+      "Parameters": {
+        "stateMachineName": "pizza_viewPizza_1_0",
+        "title": "Ordered pizza",
+        "description.$": "$.description",
+        "category": "pizza",
+        "categoryLabel": "Pizza",
+        "boardKeys": {
+          "pizzaId.$": "$.idProperties.id"
+        }
+      },
       "Resource": "module:watchBoard",
       "End": true
     }
