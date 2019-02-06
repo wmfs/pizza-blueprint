@@ -13,6 +13,8 @@ branches:
 env:
   global:
     - CI=false
+before_install:
+  - npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN
 install:
   - npm install
 deploy:
