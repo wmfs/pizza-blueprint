@@ -11,8 +11,7 @@ branches:
   only:
   - master
 env:
-  global:
-    - CI=false
+  - CI=false
 before_install:
   - npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN
 install:
