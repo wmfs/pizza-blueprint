@@ -10,11 +10,9 @@ dist: trusty
 branches:
   only:
   - master
-env:
-  - CI=false
 before_install:
   - npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN
-install:
+script:
   - npm install
 deploy:
   - provider: script
