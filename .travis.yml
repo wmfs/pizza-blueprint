@@ -13,6 +13,8 @@ branches:
 env:
   global:
     - CI=false
+install:
+  - npm install
 deploy:
   - provider: script
     skip_cleanup: true
