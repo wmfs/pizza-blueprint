@@ -9,7 +9,7 @@
   "States": {
     "FindingById": {
       "Type": "Task",
-      "InputPath": "$.pizzaId",
+      "InputPath": "$.boardKeys.pizzaId",
       "Resource": "module:findingById",
       "ResourceConfig": {
         "modelId": "pizza"

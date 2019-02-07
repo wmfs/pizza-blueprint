@@ -1,5 +1,19 @@
 {
   "type": "AdaptiveCard",
+  "meta": {
+    "card": {
+      "name": "pizza-details",
+      "hash": "?",
+      "version": "0.0.1",
+      "author": "West Midlands Fire Service"
+    },
+    "ui": {
+      "title": "Pizza Details"
+    },
+    "data": {
+      "idTemplate": "{{data.id}}"
+    }
+  },
   "body": [
     {
       "type": "Jumbotron",
@@ -169,14 +183,21 @@
   ],
   "actions": [
     {
-      "type": "Action.ShowCard",
+      "type": "Action.PushCard",
       "title": "Amend Order",
-      "showWhen": "data.status === 'PENDING'"
+      "showWhen": "data.status === 'PENDING'",
+      "stateMachineName": "pizza_amendPizza_1_0",
+      "input": {
+        "boardKeys": {
+          "pizzaId": "${data.id}"
+        }
+      }
     },
     {
-      "type": "Action.ShowCard",
+      "type": "Action.PushCard",
       "title": "Cancel Order",
-      "showWhen": "data.status === 'PENDING'"
+      "showWhen": "data.status === 'PENDING'",
+      "stateMachineName": "pizza_cancelOrder_1_0"
     }
   ],
   "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",

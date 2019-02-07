@@ -388,12 +388,12 @@
   ],
   "actions": [
     {
-      "type": "Action.Submit",
-      "title": "Submit"
-    },
-    {
       "type": "Action.Cancel",
       "title": "Cancel"
+    },
+    {
+      "type": "Action.Submit",
+      "title": "Submit"
     }
   ],
   "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
