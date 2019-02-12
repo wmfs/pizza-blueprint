@@ -24,7 +24,12 @@
           "type": "Input.Text",
           "id": "firstName",
           "placeholder": "First Name",
-          "spacing": "large"
+          "spacing": "large",
+          "validation": {
+            "minLength": 5,
+            "maxLength": 25,
+            "required": true
+          }
         },
         {
           "type": "Input.Text",
