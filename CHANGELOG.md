@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/wmfs/pizza-blueprint/compare/v1.0.0...v1.1.0) (2019-02-12)
+
+
+### ✨ Features
+
+* add some validation ([cc460a1](https://github.com/wmfs/pizza-blueprint/commit/cc460a1))
+
+
+### 📦 Code Refactoring
+
+* cancel button first ([e71dd6d](https://github.com/wmfs/pizza-blueprint/commit/e71dd6d))
+
 # 1.0.0 (2019-02-06)
 
 
