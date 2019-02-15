@@ -26,7 +26,6 @@
           "placeholder": "First Name",
           "spacing": "large",
           "validation": {
-            "minLength": 5,
             "maxLength": 25,
             "required": true
           }
@@ -35,7 +34,11 @@
           "type": "Input.Text",
           "id": "lastName",
           "placeholder": "Last Name",
-          "spacing": "large"
+          "spacing": "large",
+          "validation": {
+            "maxLength": 25,
+            "required": true
+          }
         },
         {
           "type": "Input.Number",
@@ -86,7 +89,10 @@
         {
           "type": "Input.Text",
           "id": "dietaryReqOther",
-          "isMultiline": true
+          "isMultiline": true,
+          "validation": {
+            "requiredIf": "data.dietaryReq.includes('OTHER')"
+          }
         }
       ]
     },
@@ -231,7 +237,10 @@
                   "value": 6
                 }
               ],
-              "style": "expanded"
+              "style": "expanded",
+              "validation": {
+                "requiredIf": "data.hot === true"
+              }
             },
             {
               "type": "TextBlock",
@@ -284,7 +293,10 @@
                 }
               ],
               "style": "expanded",
-              "isMultiSelect": true
+              "isMultiSelect": true,
+              "validation": {
+                "maxLength": 3
+              }
             }
           ]
         },
