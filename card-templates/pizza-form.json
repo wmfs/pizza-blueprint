@@ -91,7 +91,7 @@
           "id": "dietaryReqOther",
           "isMultiline": true,
           "validation": {
-            "requiredIfx": "data.dietaryReq.includes('OTHER')"
+            "requiredIf": "data.dietaryReq.includes('OTHER')"
           }
         }
       ]
@@ -239,7 +239,7 @@
               ],
               "style": "expanded",
               "validation": {
-                "requiredIfx": "data.hot === true"
+                "requiredIf": "data.hot === true"
               }
             },
             {
