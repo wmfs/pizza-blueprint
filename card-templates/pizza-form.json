@@ -161,7 +161,10 @@
               "value": "SWEET"
             }
           ],
-          "style": "expanded"
+          "style": "expanded",
+          "validation": {
+            "required": true
+          }
         },
         {
           "type": "Container",
@@ -191,7 +194,10 @@
                   "title": "Sweet and Sour",
                   "value": "SWEETSOUR"
                 }
-              ]
+              ],
+              "validation": {
+                "requiredIf": "data.savouryOrSweet === 'SAVOURY'"
+              }
             },
             {
               "type": "Input.Toggle",
@@ -331,7 +337,10 @@
                   "title": "Toffee",
                   "value": "TOFFEE"
                 }
-              ]
+              ],
+              "validation": {
+                "requiredIf": "data.savouryOrSweet === 'SWEET'"
+              }
             },
             {
               "type": "TextBlock",
@@ -361,7 +370,10 @@
                   "title": "Toffee",
                   "value": "TOFFEE"
                 }
-              ]
+              ],
+              "validation": {
+                "requiredIf": "data.savouryOrSweet === 'SWEET'"
+              }
             },
             {
               "id": "sprinkles",
