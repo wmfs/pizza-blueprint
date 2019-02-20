@@ -1,3 +1,16 @@
+# [1.2.0](https://github.com/wmfs/pizza-blueprint/compare/v1.1.0...v1.2.0) (2019-02-20)
+
+
+### ✨ Features
+
+* requiredIf fields ([ddf1943](https://github.com/wmfs/pizza-blueprint/commit/ddf1943))
+
+
+### 📦 Code Refactoring
+
+* comment out requiredIf validations for now ([ccd6846](https://github.com/wmfs/pizza-blueprint/commit/ccd6846))
+* remove minLen on names ([518f325](https://github.com/wmfs/pizza-blueprint/commit/518f325))
+
 # [1.1.0](https://github.com/wmfs/pizza-blueprint/compare/v1.0.0...v1.1.0) (2019-02-12)
 
 
