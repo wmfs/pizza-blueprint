@@ -1,4 +1,9 @@
 {
+  "templateMeta": {
+    "name": "update-status-form",
+    "title": "Update Pizza Status",
+    "category": "pizza"
+  },
   "type": "AdaptiveCard",
   "body": [
     {

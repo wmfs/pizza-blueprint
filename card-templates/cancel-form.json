@@ -1,4 +1,9 @@
 {
+  "templateMeta": {
+    "name": "cancel-form",
+    "title": "Cancel Pizza Order",
+    "category": "pizza"
+  },
   "type": "AdaptiveCard",
   "body": [
     {

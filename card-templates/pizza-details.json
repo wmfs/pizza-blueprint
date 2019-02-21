@@ -1,4 +1,9 @@
 {
+  "templateMeta": {
+    "name": "pizza-details",
+    "title": "Pizza #${id}",
+    "category": "pizza"
+  },
   "type": "AdaptiveCard",
   "meta": {
     "card": {

@@ -1,4 +1,9 @@
 {
+  "templateMeta": {
+    "name": "pizza-form",
+    "title": "Pizza Place",
+    "category": "pizza"
+  },
   "type": "AdaptiveCard",
   "body": [
     {
