@@ -1,3 +1,16 @@
+# [1.3.0](https://github.com/wmfs/pizza-blueprint/compare/v1.2.0...v1.3.0) (2019-02-25)
+
+
+### ✨ Features
+
+* Add pizza.jpg for use in the jumbotron. ([e1729da](https://github.com/wmfs/pizza-blueprint/commit/e1729da))
+
+
+### 📦 Code Refactoring
+
+* add template meta ([a75e9bc](https://github.com/wmfs/pizza-blueprint/commit/a75e9bc))
+* validation ([658c8d7](https://github.com/wmfs/pizza-blueprint/commit/658c8d7))
+
 # [1.2.0](https://github.com/wmfs/pizza-blueprint/compare/v1.1.0...v1.2.0) (2019-02-20)
 
 
