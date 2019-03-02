@@ -8,7 +8,7 @@
   "body": [
     {
       "type": "Jumbotron",
-      "backgroundImage": "wmfs/pizza.jpg",
+      "backgroundImage": "pizza/pizza.jpg",
       "title": "Pizza Place",
       "subtitle": "This is an example view where you can order some imaginary pizza.",
       "wash": "black"
