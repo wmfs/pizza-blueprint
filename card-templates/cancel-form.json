@@ -8,7 +8,7 @@
   "body": [
     {
       "type": "Jumbotron",
-      "backgroundImage": "wmfs/pizza.jpg",
+      "backgroundImage": "pizza/pizza.jpg",
       "title": "Pizza Place",
       "wash": "black"
     },
