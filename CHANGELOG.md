@@ -1,3 +1,11 @@
+# [1.4.0](https://github.com/wmfs/pizza-blueprint/compare/v1.3.0...v1.4.0) (2019-03-04)
+
+
+### ✨ Features
+
+* Align image source with namespace. ([1860798](https://github.com/wmfs/pizza-blueprint/commit/1860798))
+* More image-source with namespace alignment. ([da50541](https://github.com/wmfs/pizza-blueprint/commit/da50541))
+
 # [1.3.0](https://github.com/wmfs/pizza-blueprint/compare/v1.2.0...v1.3.0) (2019-02-25)
 
 
