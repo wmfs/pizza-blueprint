@@ -41,14 +41,9 @@
           "id": "phoneNumber"
         },
         {
-          "type": "TextBlock",
-          "size": "medium",
-          "text": "Dietary Requirements",
-          "spacing": "large"
-        },
-        {
           "type": "Input.ChoiceSet",
           "id": "dietaryReq",
+          "title": "Dietary Requirements",
           "icon": "fastfood",
           "choices": [
             {
