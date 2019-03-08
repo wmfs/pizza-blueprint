@@ -1,3 +1,11 @@
+# [1.5.0](https://github.com/wmfs/pizza-blueprint/compare/v1.4.0...v1.5.0) (2019-03-08)
+
+
+### ✨ Features
+
+* Make use of new icons/layout attributes. ([c717f32](https://github.com/wmfs/pizza-blueprint/commit/c717f32))
+* More fettling. ([007377d](https://github.com/wmfs/pizza-blueprint/commit/007377d))
+
 # [1.4.0](https://github.com/wmfs/pizza-blueprint/compare/v1.3.0...v1.4.0) (2019-03-04)
 
 
