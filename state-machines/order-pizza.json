@@ -2,6 +2,7 @@
   "Comment": "Allows user to place an order for a pizza.",
   "name": "Place Order",
   "version": "1.0",
+  "canBeStartedOffline": true,
   "categories": [
     "pizza"
   ],
