@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/wmfs/pizza-blueprint/compare/v1.5.0...v1.6.0) (2019-03-27)
+
+
+### ✨ Features
+
+* add canBeStartedOffline flag to order-pizza form ([95c5ac4](https://github.com/wmfs/pizza-blueprint/commit/95c5ac4))
+
 # [1.5.0](https://github.com/wmfs/pizza-blueprint/compare/v1.4.0...v1.5.0) (2019-03-08)
 
 
