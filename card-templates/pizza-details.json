@@ -64,7 +64,7 @@
           "type": "FactSet",
           "facts": [
             {
-              "title": "First Name",
+              "title": "First name",
               "value": "{{data.firstName}}"
             },
             {
