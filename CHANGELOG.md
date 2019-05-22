@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/wmfs/pizza-blueprint/compare/v1.6.0...v1.7.0) (2019-05-22)
+
+
+### ✨ Features
+
+* Utter pedantry. ([ad0cc8d](https://github.com/wmfs/pizza-blueprint/commit/ad0cc8d))
+
 # [1.6.0](https://github.com/wmfs/pizza-blueprint/compare/v1.5.0...v1.6.0) (2019-03-27)
 
 
