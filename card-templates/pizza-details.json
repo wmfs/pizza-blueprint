@@ -194,7 +194,7 @@
       "stateMachineName": "pizza_amendPizza_1_0",
       "input": {
         "boardKeys": {
-          "pizzaId": "${data.id}"
+          "pizzaId": "$.data.id"
         }
       }
     },

@@ -1,0 +1,39 @@
+{
+  "Comment": "Example card template.",
+  "name": "Kitchen Sink",
+  "version": "1.0",
+  "canBeStartedOffline": true,
+  "categories": [
+    "pizza"
+  ],
+  "instigators": [
+    "user"
+  ],
+  "StartAt": "AwaitingHumanInput",
+  "States": {
+    "AwaitingHumanInput": {
+      "Type": "Task",
+      "Resource": "module:awaitingHumanInput",
+      "Parameters": {
+        "formData": {
+          "latitude": "52.48381970",
+          "longitude": "-1.87732130"
+        }
+      },
+      "ResourceConfig": {
+        "uiType": "form",
+        "uiName": "pizza_kitchenSink",
+        "dataPath": "$.formData"
+      },
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "pizza_customer",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}
