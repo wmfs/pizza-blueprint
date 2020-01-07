@@ -25,12 +25,6 @@ jobs:
           command: |
             npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN
             npm install
-      - run:
-          name: test
-          command: npm test
-      - run:
-          name: codecov
-          command: npm run coverage
   release:
     docker:
     # use node:lts
