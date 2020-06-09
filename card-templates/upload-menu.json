@@ -17,7 +17,7 @@
       "onUploadEndpoint": {
         "name": "pizza_uploadPizzaMenuHandler_1_0"
       },
-      "autoUpload": false,
+      "autoUpload": true,
       "additionalFields": {
         "upload": true
       },

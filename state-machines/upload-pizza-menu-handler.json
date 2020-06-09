@@ -5,8 +5,16 @@
   "categories": [
     "pizza"
   ],
-  "StartAt": "CopyToCloudStorage",
+  "StartAt": "Process",
   "States": {
+    "Process": {
+      "Type": "Task",
+      "Resource": "module:ensureCloudStorageFolder",
+      "ResourceConfig": {
+        "folderPath": "pizza-menu"
+      },
+      "Next": "CopyToCloudStorage"
+    },
     "CopyToCloudStorage": {
       "Type": "Task",
       "Resource": "function:pizza_pizzaUploadHandler",
