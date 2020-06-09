@@ -1,0 +1,24 @@
+{
+  "Comment": "Take an uploaded menu and file away in cloud storage",
+  "name": "Menu upload handler",
+  "version": "1.0",
+  "categories": [
+    "pizza"
+  ],
+  "StartAt": "CopyToCloudStorage",
+  "States": {
+    "CopyToCloudStorage": {
+      "Type": "Task",
+      "Resource": "function:pizza_pizzaUploadHandler",
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "pizza_check",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}

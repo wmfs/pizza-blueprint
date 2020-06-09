@@ -1,0 +1,31 @@
+{
+  "Comment": "Upload a pizza menu",
+  "name": "Upload Menu",
+  "version": "1.0",
+  "categories": [
+    "pizza"
+  ],
+  "instigators": [
+    "user"
+  ],
+  "StartAt": "AwaitingHumanInput",
+  "States": {
+    "AwaitingHumanInput": {
+      "Type": "Task",
+      "Resource": "module:awaitingHumanInput",
+      "ResourceConfig": {
+        "uiType": "info",
+        "uiName": "pizza_uploadMenu"
+      },
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "pizza_chef",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}
