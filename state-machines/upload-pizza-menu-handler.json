@@ -8,16 +8,22 @@
   "StartAt": "Process",
   "States": {
     "Process": {
+      "Type": "Pass",
+      "Parameters": {
+        "remoteFolderPath": "pizza-menu",
+        "localFilePath.$": "$.body.upload.serverFilename",
+        "remoteFileName.$": "$.body.upload.clientFilename"
+      },
+      "Next": "CheckFolder"
+    },
+    "CheckFolder": {
       "Type": "Task",
       "Resource": "module:ensureCloudStorageFolder",
-      "ResourceConfig": {
-        "folderPath": "pizza-menu"
-      },
       "Next": "CopyToCloudStorage"
     },
     "CopyToCloudStorage": {
       "Type": "Task",
-      "Resource": "function:pizza_pizzaUploadHandler",
+      "Resource": "module:copyFileToRemoteFolder",
       "End": true
     }
   },
