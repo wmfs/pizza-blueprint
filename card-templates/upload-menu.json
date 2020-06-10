@@ -13,18 +13,45 @@
       "wash": "black"
     },
     {
-      "type": "Input.FileUpload",
-      "onUploadEndpoint": {
-        "name": "pizza_uploadPizzaMenuHandler_1_0"
-      },
-      "autoUpload": true,
-      "additionalFields": {
-        "upload": true
-      },
-      "accept": [
-        ".pdf",
-        ".jpg",
-        ".jpeg"
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "items": [
+            {
+              "type": "Input.FileUpload",
+              "onUploadEndpoint": {
+                "name": "pizza_uploadPizzaMenuHandler_1_0"
+              },
+              "autoUpload": true,
+              "additionalFields": {
+                "upload": true
+              },
+              "accept": [
+                ".pdf",
+                ".jpg",
+                ".jpeg"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Uploaded Menus"
+            },
+            {
+              "type": "List",
+              "arrayPath": "data.menus",
+              "templates": {
+                "label": "{{item.Name}}"
+              },
+              "notFoundText": "No menus uploaded."
+            }
+          ]
+        }
       ]
     }
   ],

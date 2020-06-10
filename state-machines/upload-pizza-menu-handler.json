@@ -19,11 +19,29 @@
     "CheckFolder": {
       "Type": "Task",
       "Resource": "module:ensureCloudStorageFolder",
+      "Parameters": {
+        "remoteFolderPath.$": "$.remoteFolderPath"
+      },
       "Next": "CopyToCloudStorage"
     },
     "CopyToCloudStorage": {
       "Type": "Task",
       "Resource": "module:copyFileToRemoteFolder",
+      "Parameters": {
+        "localFilePath.$": "$.localFilePath",
+        "remoteFolderPath.$": "$.remoteFolderPath",
+        "remoteFileName.$": "$.remoteFileName"
+      },
+      "ResultPath": "$.uploadedFile",
+      "Next": "RefreshList"
+    },
+    "RefreshList": {
+      "Type": "Task",
+      "Resource": "module:getCloudStorageContents",
+      "Parameters": {
+        "remoteFolderPath.$": "$.remoteFolderPath"
+      },
+      "ResultPath": "$.menus",
       "End": true
     }
   },
