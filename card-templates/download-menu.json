@@ -1,7 +1,7 @@
 {
   "templateMeta": {
     "name": "upload-menu",
-    "title": "Upload Pizza Menu",
+    "title": "Pizza Menus",
     "category": "pizza"
   },
   "type": "AdaptiveCard",
@@ -13,26 +13,17 @@
       "wash": "black"
     },
     {
-      "type": "ColumnSet",
+      "type": "Table",
+      "title": "Available Menus",
+      "arrayPath": "data.menus",
       "columns": [
         {
-          "type": "Column",
-          "items": [
-            {
-              "type": "TextBlock",
-              "text": "Available Menus"
-            },
-            {
-              "type": "List",
-              "arrayPath": "data.menus",
-              "templates": {
-                "label": "{{item.Name}}"
-              },
-              "notFoundText": "No menus uploaded."
-            }
-          ]
+          "title": "Name",
+          "field": "Name"
         }
-      ]
+      ],
+      "notFoundText": "No menus uploaded.",
+      "showLaunches": false
     }
   ],
   "actions": [
