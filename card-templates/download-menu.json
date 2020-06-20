@@ -23,7 +23,7 @@
         }
       ],
       "notFoundText": "No menus uploaded.",
-      "showLaunches": false
+      "showLaunches": true
     }
   ],
   "actions": [
