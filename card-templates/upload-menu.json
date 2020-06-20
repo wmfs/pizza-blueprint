@@ -30,7 +30,8 @@
               "accept": [
                 ".pdf",
                 ".jpg",
-                ".jpeg"
+                ".jpeg",
+                ".png"
               ]
             }
           ]
