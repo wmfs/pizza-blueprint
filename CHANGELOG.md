@@ -1,3 +1,55 @@
+# [1.8.0](https://github.com/wmfs/pizza-blueprint/compare/v1.7.1...v1.8.0) (2020-06-22)
+
+
+### ✨ Features
+
+* **menu download:** Starting menu download ([ca9b774](https://github.com/wmfs/pizza-blueprint/commit/ca9b774b2e14dd1dc6dfe84ff4908ed170c989f7))
+* Start hooking up cloud storage ([e549a65](https://github.com/wmfs/pizza-blueprint/commit/e549a6589d30bd564bb62c5f3a4ec3c5660aacf0))
+* Upload files to /pizza-menu folder ([12ddb4e](https://github.com/wmfs/pizza-blueprint/commit/12ddb4ed8b5d1da220d4700a249db2e95f0cf7d4))
+* Upload menu to remote folder. List contents of folder. ([c63059c](https://github.com/wmfs/pizza-blueprint/commit/c63059c3c4ef85adcb0769847a4a4f56f3e87314))
+* **Menu upload:** state-machines to upload a menu ([58e0c32](https://github.com/wmfs/pizza-blueprint/commit/58e0c3220aab76ab110913d65e44922e4b52b149))
+
+
+### 🐛 Bug Fixes
+
+* Allow png uploads too ([05ce89b](https://github.com/wmfs/pizza-blueprint/commit/05ce89bd5881e5aff43907a29ae1d04a96278bdd))
+* **download:** Show launches in menu table ([961ead7](https://github.com/wmfs/pizza-blueprint/commit/961ead7b03d78ad3943b8451ba0b7bff0204d879))
+* **download:** Switch from columnset to table ([77784ea](https://github.com/wmfs/pizza-blueprint/commit/77784ea7319bae7c3dfe5ed99a7fb75470517768))
+
+
+### 🛠 Builds
+
+* **deps-dev:** bump [@semantic-release](https://github.com/semantic-release)/changelog from 5.0.0 to 5.0.1 ([21046ac](https://github.com/wmfs/pizza-blueprint/commit/21046ac56aacdb9b71c7744f34d084dda786e56e))
+* **deps-dev:** bump codecov from 3.6.2 to 3.6.3 ([44d85b1](https://github.com/wmfs/pizza-blueprint/commit/44d85b16703cfe075568f19c9b375b59e1f2b54d))
+* **deps-dev:** bump codecov from 3.6.3 to 3.6.4 ([131761c](https://github.com/wmfs/pizza-blueprint/commit/131761c5cd4c7b7cc4addddcc9214a8b77f0a840))
+* **deps-dev:** bump codecov from 3.6.4 to 3.6.5 ([fd8d018](https://github.com/wmfs/pizza-blueprint/commit/fd8d018bde33f7787581fe10f376626315b8f679))
+* **deps-dev:** bump codecov from 3.6.5 to 3.7.0 ([5445988](https://github.com/wmfs/pizza-blueprint/commit/5445988e0e488282ab8a47396d9e3722a5b4e966))
+* **deps-dev:** bump conventional-changelog-metahub from 4.0.0 to 4.0.1 ([62ed788](https://github.com/wmfs/pizza-blueprint/commit/62ed788e6ba767adf7f7c7fa8b49a84e646e4415))
+* **deps-dev:** bump cz-conventional-changelog from 3.1.0 to 3.1.1 ([e5053b1](https://github.com/wmfs/pizza-blueprint/commit/e5053b15f8524f2fe1ec75a281d695b7bc98de75))
+* **deps-dev:** bump cz-conventional-changelog from 3.1.1 to 3.2.0 ([c99bb3a](https://github.com/wmfs/pizza-blueprint/commit/c99bb3a1121f439dcb5e4d054376986492c95bb4))
+* **deps-dev:** bump mocha from 7.0.1 to 7.1.0 ([577c50e](https://github.com/wmfs/pizza-blueprint/commit/577c50e109a2ef8ca20ce81b56170e7bc7970fb7))
+* **deps-dev:** bump mocha from 7.1.0 to 7.1.1 ([26f926c](https://github.com/wmfs/pizza-blueprint/commit/26f926c514df949f1fa95bd25fb873faa75ac07d))
+* **deps-dev:** bump mocha from 7.1.1 to 7.1.2 ([c75891d](https://github.com/wmfs/pizza-blueprint/commit/c75891d869efbfccd17fca6420e9145bf579371b))
+* **deps-dev:** bump mocha from 7.1.2 to 7.2.0 ([c4d4daa](https://github.com/wmfs/pizza-blueprint/commit/c4d4daa80a39d2f317ff0f830dba47fad6c8ef40))
+* **deps-dev:** bump mocha from 7.2.0 to 8.0.1 ([589e1eb](https://github.com/wmfs/pizza-blueprint/commit/589e1eb155387acab9dc068114c3583ab8bc32b4))
+* **deps-dev:** bump nyc from 15.0.0 to 15.0.1 ([873bb93](https://github.com/wmfs/pizza-blueprint/commit/873bb93dc47b7b5587b492e6c4d2e24cf79994b2))
+* **deps-dev:** bump nyc from 15.0.1 to 15.1.0 ([a72a077](https://github.com/wmfs/pizza-blueprint/commit/a72a07700bbae6eb805b3c01e82b3de01d617f39))
+* **deps-dev:** bump semantic-release from 17.0.1 to 17.0.2 ([53577dc](https://github.com/wmfs/pizza-blueprint/commit/53577dc55f586adaafdf3a009584dbea34f4b2ba))
+* **deps-dev:** bump semantic-release from 17.0.2 to 17.0.3 ([30d7b6f](https://github.com/wmfs/pizza-blueprint/commit/30d7b6fbf36e3ece0216486062898c6787475f9e))
+* **deps-dev:** bump semantic-release from 17.0.3 to 17.0.4 ([4656666](https://github.com/wmfs/pizza-blueprint/commit/4656666e3308218d3cbdf22ae1ac99cfebdaa1c2))
+* **deps-dev:** bump semantic-release from 17.0.4 to 17.0.5 ([7c3f045](https://github.com/wmfs/pizza-blueprint/commit/7c3f0456e44225f52f46d87e57d169c0639005c7))
+* **deps-dev:** bump semantic-release from 17.0.5 to 17.0.6 ([fe2d3b2](https://github.com/wmfs/pizza-blueprint/commit/fe2d3b2c90f674749d8be05192643b5a9ac95188))
+* **deps-dev:** bump semantic-release from 17.0.6 to 17.0.7 ([da104b1](https://github.com/wmfs/pizza-blueprint/commit/da104b1ffb1b4f89b92474f06334e4548b81b7a0))
+* **deps-dev:** bump semantic-release from 17.0.7 to 17.0.8 ([cef66dd](https://github.com/wmfs/pizza-blueprint/commit/cef66ddade9658109716d3412d42714b5ed515a0))
+* **deps-dev:** bump standard from 14.3.1 to 14.3.2 ([d59b848](https://github.com/wmfs/pizza-blueprint/commit/d59b84857e79d42bbcae732855c08733af73c2cd))
+* **deps-dev:** bump standard from 14.3.2 to 14.3.3 ([f03fd3d](https://github.com/wmfs/pizza-blueprint/commit/f03fd3df29db0bcf37abc1f64d0c73eb628df1d3))
+* **deps-dev:** bump standard from 14.3.3 to 14.3.4 ([7306c7a](https://github.com/wmfs/pizza-blueprint/commit/7306c7a41e6fdbbff02c3af8328f6bf993793bd2))
+
+
+### ⚙️ Continuous Integrations
+
+* **circle:** add context env var config to config.yml ([a9fd4ec](https://github.com/wmfs/pizza-blueprint/commit/a9fd4ece98480dfef717d193f219455ed8693f96))
+
 ## [1.7.1](https://github.com/wmfs/pizza-blueprint/compare/v1.7.0...v1.7.1) (2020-01-30)
 
 
