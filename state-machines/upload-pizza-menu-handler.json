@@ -1,0 +1,56 @@
+{
+  "Comment": "Take an uploaded menu and file away in cloud storage",
+  "name": "Menu upload handler",
+  "version": "1.0",
+  "categories": [
+    "pizza"
+  ],
+  "StartAt": "Process",
+  "States": {
+    "Process": {
+      "Type": "Pass",
+      "Parameters": {
+        "remoteFolderPath": "pizza-menu",
+        "localFilePath.$": "$.body.upload.serverFilename",
+        "remoteFileName.$": "$.body.upload.clientFilename"
+      },
+      "Next": "CheckFolder"
+    },
+    "CheckFolder": {
+      "Type": "Task",
+      "Resource": "module:ensureCloudStorageFolder",
+      "Parameters": {
+        "remoteFolderPath.$": "$.remoteFolderPath"
+      },
+      "Next": "CopyToCloudStorage"
+    },
+    "CopyToCloudStorage": {
+      "Type": "Task",
+      "Resource": "module:copyFileToRemoteFolder",
+      "Parameters": {
+        "localFilePath.$": "$.localFilePath",
+        "remoteFolderPath.$": "$.remoteFolderPath",
+        "remoteFileName.$": "$.remoteFileName"
+      },
+      "ResultPath": "$.uploadedFile",
+      "Next": "RefreshList"
+    },
+    "RefreshList": {
+      "Type": "Task",
+      "Resource": "module:getCloudStorageContents",
+      "Parameters": {
+        "remoteFolderPath.$": "$.remoteFolderPath"
+      },
+      "ResultPath": "$.menus",
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "pizza_check",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}

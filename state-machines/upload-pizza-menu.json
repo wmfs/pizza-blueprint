@@ -1,0 +1,41 @@
+{
+  "Comment": "Upload a pizza menu",
+  "name": "Upload Menu",
+  "version": "1.0",
+  "categories": [
+    "pizza"
+  ],
+  "instigators": [
+    "user"
+  ],
+  "StartAt": "ListMenus",
+  "States": {
+    "ListMenus": {
+      "Type": "Task",
+      "Resource": "module:getCloudStorageContents",
+      "Parameters": {
+        "remoteFolderPath": "pizza-menu"
+      },
+      "ResultPath": "$.menus",
+      "Next": "AwaitingHumanInput"
+    },
+    "AwaitingHumanInput": {
+      "Type": "Task",
+      "Resource": "module:awaitingHumanInput",
+      "ResourceConfig": {
+        "uiType": "info",
+        "uiName": "pizza_uploadMenu",
+        "dataPath": "$"
+      },
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "pizza_chef",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}

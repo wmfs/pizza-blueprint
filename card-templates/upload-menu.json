@@ -1,0 +1,67 @@
+{
+  "templateMeta": {
+    "name": "upload-menu",
+    "title": "Upload Pizza Menu",
+    "category": "pizza"
+  },
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "Jumbotron",
+      "backgroundImage": "pizza/pizza.jpg",
+      "title": "Upload Pizza Menu",
+      "wash": "black"
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "items": [
+            {
+              "type": "Input.FileUpload",
+              "onUploadEndpoint": {
+                "name": "pizza_uploadPizzaMenuHandler_1_0"
+              },
+              "autoUpload": true,
+              "additionalFields": {
+                "upload": true
+              },
+              "accept": [
+                ".pdf",
+                ".jpg",
+                ".jpeg",
+                ".png"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Uploaded Menus"
+            },
+            {
+              "type": "List",
+              "arrayPath": "data.menus",
+              "templates": {
+                "label": "{{item.Name}}"
+              },
+              "notFoundText": "No menus uploaded."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Cancel",
+      "title": "Close"
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.0"
+}

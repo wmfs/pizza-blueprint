@@ -1,0 +1,41 @@
+{
+  "Comment": "View a pizza menu",
+  "name": "View Menu",
+  "version": "1.0",
+  "categories": [
+    "pizza"
+  ],
+  "instigators": [
+    "user"
+  ],
+  "StartAt": "ListMenus",
+  "States": {
+    "ListMenus": {
+      "Type": "Task",
+      "Resource": "module:getCloudStorageContents",
+      "Parameters": {
+        "remoteFolderPath": "pizza-menu"
+      },
+      "ResultPath": "$.menus",
+      "Next": "AwaitingHumanInput"
+    },
+    "AwaitingHumanInput": {
+      "Type": "Task",
+      "Resource": "module:awaitingHumanInput",
+      "ResourceConfig": {
+        "uiType": "info",
+        "uiName": "pizza_downloadMenu",
+        "dataPath": "$"
+      },
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "pizza_customer",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}
