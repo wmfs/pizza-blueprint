@@ -13,6 +13,9 @@
     "ListMenus": {
       "Type": "Task",
       "Resource": "module:getCloudStorageContents",
+      "ResourceConfig": {
+        "provider": "local"
+      },
       "Parameters": {
         "remoteFolderPath": "pizza-menu"
       },

@@ -19,6 +19,9 @@
     "CheckFolder": {
       "Type": "Task",
       "Resource": "module:ensureCloudStorageFolder",
+      "ResourceConfig": {
+        "provider": "local"
+      },
       "Parameters": {
         "remoteFolderPath.$": "$.remoteFolderPath"
       },
@@ -27,6 +30,9 @@
     "CopyToCloudStorage": {
       "Type": "Task",
       "Resource": "module:copyFileToRemoteFolder",
+      "ResourceConfig": {
+        "provider": "local"
+      },
       "Parameters": {
         "localFilePath.$": "$.localFilePath",
         "remoteFolderPath.$": "$.remoteFolderPath",
@@ -38,6 +44,9 @@
     "RefreshList": {
       "Type": "Task",
       "Resource": "module:getCloudStorageContents",
+      "ResourceConfig": {
+        "provider": "local"
+      },
       "Parameters": {
         "remoteFolderPath.$": "$.remoteFolderPath"
       },
