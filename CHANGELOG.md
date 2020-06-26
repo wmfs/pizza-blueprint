@@ -1,3 +1,16 @@
+## [1.8.1](https://github.com/wmfs/pizza-blueprint/compare/v1.8.0...v1.8.1) (2020-06-26)
+
+
+### 🐛 Bug Fixes
+
+* Specify local storage provider in state machines ([d41b381](https://github.com/wmfs/pizza-blueprint/commit/d41b38128766905fb345a9e226f39cd9c833a897))
+
+
+### 🛠 Builds
+
+* **deps-dev:** bump semantic-release from 17.0.8 to 17.1.0 ([f5d5a6c](https://github.com/wmfs/pizza-blueprint/commit/f5d5a6c7c42313b8b81a2c9444bbd25f1d909033))
+* **deps-dev:** bump semantic-release from 17.1.0 to 17.1.1 ([7ac33d1](https://github.com/wmfs/pizza-blueprint/commit/7ac33d11d2ebe8ba1785d05522fb1ca2498dbd4f))
+
 # [1.8.0](https://github.com/wmfs/pizza-blueprint/compare/v1.7.1...v1.8.0) (2020-06-22)
 
 
