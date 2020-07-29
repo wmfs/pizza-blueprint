@@ -1,3 +1,22 @@
+## [1.8.2](https://github.com/wmfs/pizza-blueprint/compare/v1.8.1...v1.8.2) (2020-07-29)
+
+
+### 🐛 Bug Fixes
+
+* fix roleId on upload-pizza-menu-handler state machine ([ae95e80](https://github.com/wmfs/pizza-blueprint/commit/ae95e80cc1ecb4cd365263021dcd0dca6e31896f))
+
+
+### 🛠 Builds
+
+* **deps-dev:** bump codecov from 3.7.0 to 3.7.1 ([86784a3](https://github.com/wmfs/pizza-blueprint/commit/86784a3a91fe594f0f0f16dd3ad5a2927a1d1328))
+* **deps-dev:** bump codecov from 3.7.1 to 3.7.2 ([16308b8](https://github.com/wmfs/pizza-blueprint/commit/16308b80e98d066157ff249acb4bb31445c61864))
+
+
+### ⚙️ Continuous Integrations
+
+* **circle:** separate lint job [ch1009] ([b077482](https://github.com/wmfs/pizza-blueprint/commit/b0774824c786fb9b8ef394db450a63d6ba37dc74))
+* **circle:** use updated circle node image [skip ci] ([40cfff5](https://github.com/wmfs/pizza-blueprint/commit/40cfff539744ec367443f6946703e36df2b36b7b))
+
 ## [1.8.1](https://github.com/wmfs/pizza-blueprint/compare/v1.8.0...v1.8.1) (2020-06-26)
 
 
