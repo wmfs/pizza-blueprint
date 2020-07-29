@@ -56,7 +56,7 @@
   },
   "restrictions": [
     {
-      "roleId": "pizza_check",
+      "roleId": "pizza_chef",
       "allows": [
         "*"
       ]
