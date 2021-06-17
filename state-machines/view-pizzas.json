@@ -29,7 +29,11 @@
       "ResourceConfig": {
         "uiType": "info",
         "uiName": "pizza_orderedPizzas",
-        "uiListener": "pizza_pizza_beforeInsert",
+        "uiListener": [
+          "pizza_pizza_beforeInsert",
+          "pizza_pizza_beforeUpdate",
+          "pizza_pizza_beforeDelete"
+        ],
         "dataPath": "$"
       },
       "End": true
