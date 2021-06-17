@@ -30,7 +30,7 @@
         {
           "type": "Input.Name",
           "title": "Your name",
-          "id": "firstName",
+          "id": "name",
           "validation": {
             "maxLength": 50,
             "required": true

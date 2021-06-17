@@ -64,12 +64,8 @@
           "type": "FactSet",
           "facts": [
             {
-              "title": "First name",
-              "value": "{{data.firstName}}"
-            },
-            {
-              "title": "Last Name",
-              "value": "{{data.lastName}}"
+              "title": "Name",
+              "value": "{{data.name}}"
             },
             {
               "title": "Phone Number",

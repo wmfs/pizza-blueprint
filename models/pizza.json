@@ -8,12 +8,8 @@
       "title": "Status of the pizza order",
       "type": "string"
     },
-    "firstName": {
-      "title": "First name",
-      "type": "string"
-    },
-    "lastName": {
-      "title": "Last name",
+    "name": {
+      "title": "Name",
       "type": "string"
     },
     "phoneNumber": {
@@ -97,8 +93,7 @@
     }
   },
   "required": [
-    "firstName",
-    "lastName",
+    "name",
     "phoneNumber"
   ]
 }
