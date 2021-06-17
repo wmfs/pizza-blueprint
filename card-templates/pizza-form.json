@@ -30,7 +30,7 @@
         {
           "type": "Input.Name",
           "title": "Your name",
-          "id": "firstName",
+          "id": "name",
           "validation": {
             "maxLength": 50,
             "required": true
@@ -38,7 +38,10 @@
         },
         {
           "type": "Input.TelephoneNumber",
-          "id": "phoneNumber"
+          "id": "phoneNumber",
+          "validation": {
+            "required": true
+          }
         },
         {
           "type": "Input.ChoiceSet",

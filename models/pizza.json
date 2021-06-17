@@ -8,17 +8,13 @@
       "title": "Status of the pizza order",
       "type": "string"
     },
-    "firstName": {
-      "title": "First name",
-      "type": "string"
-    },
-    "lastName": {
-      "title": "Last name",
+    "name": {
+      "title": "Name",
       "type": "string"
     },
     "phoneNumber": {
       "title": "Phone number",
-      "type": "integer"
+      "type": "string"
     },
     "dietaryReq": {
       "title": "Dietary requirements",
@@ -97,8 +93,10 @@
     }
   },
   "required": [
-    "firstName",
-    "lastName",
+    "name",
     "phoneNumber"
+  ],
+  "listeners": [
+    "beforeInsert"
   ]
 }

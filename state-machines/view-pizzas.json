@@ -1,6 +1,6 @@
 {
-  "Comment": "View a pizza menu",
-  "name": "View Menu",
+  "Comment": "View ordered pizzas",
+  "name": "View Ordered Pizzas",
   "version": "1.0",
   "categories": [
     "pizza"
@@ -9,18 +9,18 @@
     "user"
   ],
   "instigatorGroup": "app",
-  "StartAt": "ListMenus",
+  "StartAt": "Find",
   "States": {
-    "ListMenus": {
+    "Find": {
       "Type": "Task",
-      "Resource": "module:getCloudStorageContents",
+      "Resource": "module:finding",
       "ResourceConfig": {
-        "provider": "local"
+        "modelId": "pizza",
+        "filter": {
+          "orderBy": ["-created"]
+        }
       },
-      "Parameters": {
-        "remoteFolderPath": "pizza-menu"
-      },
-      "ResultPath": "$.menus",
+      "ResultPath": "$.pizzas",
       "Next": "AwaitingHumanInput"
     },
     "AwaitingHumanInput": {
@@ -28,7 +28,8 @@
       "Resource": "module:awaitingHumanInput",
       "ResourceConfig": {
         "uiType": "info",
-        "uiName": "pizza_downloadMenu",
+        "uiName": "pizza_orderedPizzas",
+        "uiListener": "pizza_pizza_beforeInsert",
         "dataPath": "$"
       },
       "End": true
@@ -36,7 +37,7 @@
   },
   "restrictions": [
     {
-      "roleId": "pizza_customer",
+      "roleId": "pizza_chef",
       "allows": [
         "*"
       ]

@@ -1,0 +1,29 @@
+{
+  "templateMeta": {
+    "name": "ordered-pizzas",
+    "title": "Ordered Pizzas",
+    "category": "pizza"
+  },
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "List",
+      "arrayPath": "data.pizzas",
+      "templates": {
+        "label": "Name: {{ item.name }}",
+        "sublabel": [
+          "{{ item.createdBy }}",
+          "{{ formatDate(item.created, 'DD/MM/YY HH:mm') }}"
+        ],
+        "badge": [
+          {
+            "text": "{{ item.status || 'N/A' }}",
+            "color": "accent"
+          }
+        ]
+      }
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.0"
+}
