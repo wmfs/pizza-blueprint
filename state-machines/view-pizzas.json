@@ -30,9 +30,9 @@
         "uiType": "info",
         "uiName": "pizza_orderedPizzas",
         "uiListener": [
-          "pizza_pizza_beforeInsert",
-          "pizza_pizza_beforeUpdate",
-          "pizza_pizza_beforeDelete"
+          "pizza_pizza_insert",
+          "pizza_pizza_update",
+          "pizza_pizza_delete"
         ],
         "dataPath": "$"
       },

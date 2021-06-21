@@ -97,8 +97,8 @@
     "phoneNumber"
   ],
   "listeners": [
-    "beforeInsert",
-    "beforeUpdate",
-    "beforeDelete"
+    "insert",
+    "update",
+    "delete"
   ]
 }
