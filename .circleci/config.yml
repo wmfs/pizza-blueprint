@@ -56,7 +56,6 @@ workflows:
           - docker-hub-creds
           - build-env-vars
         requires:
-        - unit test
         - lint
         filters:
           branches:
