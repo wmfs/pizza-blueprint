@@ -1,3 +1,62 @@
+## [1.8.3](https://github.com/wmfs/pizza-blueprint/compare/v1.8.2...v1.8.3) (2021-06-21)
+
+
+### 🐛 Bug Fixes
+
+* name column/fields ([f672b1d](https://github.com/wmfs/pizza-blueprint/commit/f672b1d6e8680dae70f93ac93c0a67d25aea2e10))
+* remove unit test require ([62729b7](https://github.com/wmfs/pizza-blueprint/commit/62729b7da2eeff0738836dcbdf4083453ac309a5))
+
+
+### 🛠 Builds
+
+* **deps-dev:** [security] bump semantic-release from 17.2.1 to 17.3.0 ([0a659d4](https://github.com/wmfs/pizza-blueprint/commit/0a659d401589703737003d41b9bb0132e4b37dcf))
+* **deps-dev:** bump chai from 4.2.0 to 4.3.0 ([6855ebb](https://github.com/wmfs/pizza-blueprint/commit/6855ebb9f9bd39c380e01ccf8fe8ca673a277f26))
+* **deps-dev:** bump chai from 4.3.0 to 4.3.4 ([66d65ad](https://github.com/wmfs/pizza-blueprint/commit/66d65ad9d219a849a7724a4b330a7a50a47b2fc0))
+* **deps-dev:** bump codecov from 3.7.2 to 3.8.0 ([00eda2e](https://github.com/wmfs/pizza-blueprint/commit/00eda2e93832a052581b6107769078ae8a41cc9f))
+* **deps-dev:** bump codecov from 3.8.0 to 3.8.1 ([ea89442](https://github.com/wmfs/pizza-blueprint/commit/ea8944284b130bf3e132c7578ff11276d6ea9c73))
+* **deps-dev:** bump codecov from 3.8.1 to 3.8.2 ([33f7806](https://github.com/wmfs/pizza-blueprint/commit/33f7806cd79ec58d9de718977e9cf425dd355491))
+* **deps-dev:** bump cz-conventional-changelog from 3.2.0 to 3.2.1 ([dde104f](https://github.com/wmfs/pizza-blueprint/commit/dde104ff32c8c4ba2ae04971fc21bdc325c3ae6f))
+* **deps-dev:** bump cz-conventional-changelog from 3.2.1 to 3.3.0 ([36c55f0](https://github.com/wmfs/pizza-blueprint/commit/36c55f05046d4d79b0e2f5b1f822bfaec98a956e))
+* **deps-dev:** bump mocha from 8.0.1 to 8.1.0 ([1563de3](https://github.com/wmfs/pizza-blueprint/commit/1563de38f5647d070ea49c4b6d2270be4d8dd8e6))
+* **deps-dev:** bump mocha from 8.1.0 to 8.1.1 ([d3df259](https://github.com/wmfs/pizza-blueprint/commit/d3df25934681bb3ca94ba525c0e959cd3d1db54b))
+* **deps-dev:** bump mocha from 8.1.1 to 8.1.2 ([882e427](https://github.com/wmfs/pizza-blueprint/commit/882e427f8c951e326e360270fe2d326da5c244fc))
+* **deps-dev:** bump mocha from 8.1.2 to 8.1.3 ([39c78a4](https://github.com/wmfs/pizza-blueprint/commit/39c78a4ffbc06d71aa77bb589792d4de0073c94f))
+* **deps-dev:** bump mocha from 8.1.3 to 8.2.0 ([5e0e8a4](https://github.com/wmfs/pizza-blueprint/commit/5e0e8a4128ea4d4750aa9c472f03161211cd96a2))
+* **deps-dev:** bump mocha from 8.2.0 to 8.2.1 ([9d11868](https://github.com/wmfs/pizza-blueprint/commit/9d118681f3e598eb37782b78187f8e9b30772ec7))
+* **deps-dev:** bump mocha from 8.2.1 to 8.3.0 ([572a215](https://github.com/wmfs/pizza-blueprint/commit/572a2156c58c765d7d2278e0e6094de763459efd))
+* **deps-dev:** bump mocha from 8.3.0 to 8.3.2 ([2b63e77](https://github.com/wmfs/pizza-blueprint/commit/2b63e776149c261246e5b4fd261326813ed48e01))
+* **deps-dev:** bump semantic-release from 17.1.1 to 17.1.2 ([e01ac1b](https://github.com/wmfs/pizza-blueprint/commit/e01ac1bda2f445acf33df1ad3a7b074c86523942))
+* **deps-dev:** bump semantic-release from 17.1.2 to 17.2.0 ([8888d95](https://github.com/wmfs/pizza-blueprint/commit/8888d95718069df458f51a4f7190fb94d06096d5))
+* **deps-dev:** bump semantic-release from 17.2.0 to 17.2.1 ([975a1b9](https://github.com/wmfs/pizza-blueprint/commit/975a1b94632b5d50010a7aba1f4739ccd5fd6672))
+* **deps-dev:** bump semantic-release from 17.3.0 to 17.3.1 ([c4971c1](https://github.com/wmfs/pizza-blueprint/commit/c4971c1c18a609bdc405173c38c09cf54503ac05))
+* **deps-dev:** bump semantic-release from 17.3.1 to 17.3.2 ([c722a65](https://github.com/wmfs/pizza-blueprint/commit/c722a658df1c2da0aab8357f5f0297e4be42a986))
+* **deps-dev:** bump semantic-release from 17.3.2 to 17.3.3 ([168b609](https://github.com/wmfs/pizza-blueprint/commit/168b60978554c22b874084cf0fa4dbef3c4ea032))
+* **deps-dev:** bump semantic-release from 17.3.3 to 17.3.4 ([ea42351](https://github.com/wmfs/pizza-blueprint/commit/ea423510392d96e03fa04cc601b88b9e88a161ab))
+* **deps-dev:** bump semantic-release from 17.3.4 to 17.3.6 ([2a5be93](https://github.com/wmfs/pizza-blueprint/commit/2a5be9381fcf7dcccd2c99a2eb4c76c1f94f4dca))
+* **deps-dev:** bump semantic-release from 17.3.6 to 17.3.7 ([9ab79e9](https://github.com/wmfs/pizza-blueprint/commit/9ab79e9da44add425623e4f4e4439dc26b0cfe53))
+* **deps-dev:** bump semantic-release from 17.3.7 to 17.3.8 ([f368078](https://github.com/wmfs/pizza-blueprint/commit/f368078d1636276d05aae658478c71780132350a))
+* **deps-dev:** bump semantic-release from 17.3.8 to 17.3.9 ([ede5ce1](https://github.com/wmfs/pizza-blueprint/commit/ede5ce18e584c4981c0e5f35f04c627b1b6ac026))
+* **deps-dev:** bump semantic-release from 17.3.9 to 17.4.1 ([d132612](https://github.com/wmfs/pizza-blueprint/commit/d13261246634a24b4dc6837c1469399aa773aa03))
+* **deps-dev:** bump semantic-release from 17.4.1 to 17.4.2 ([ce381fe](https://github.com/wmfs/pizza-blueprint/commit/ce381feddb2681eb708d11760fb4c2d0f4484354))
+* **deps-dev:** bump semantic-release from 17.4.2 to 17.4.3 ([6d7fd4b](https://github.com/wmfs/pizza-blueprint/commit/6d7fd4b045b2514285b74ff591782939787c7838))
+* **deps-dev:** bump standard from 14.3.4 to 15.0.0 ([4da6390](https://github.com/wmfs/pizza-blueprint/commit/4da639089316c7c06b172b1b19beecbfc19a5738))
+* **deps-dev:** bump standard from 15.0.0 to 16.0.3 ([d5d3120](https://github.com/wmfs/pizza-blueprint/commit/d5d3120389e4e143944f5b46a08b8da8918e7177))
+
+
+### ⚙️ Continuous Integrations
+
+* **circle:** authenticate Docker image pull [ch2767] ([927713b](https://github.com/wmfs/pizza-blueprint/commit/927713b3307ed2d14afe4cf60ff83372cb687d22))
+* **circle:** cache dependencies [ch2770] ([0b75db0](https://github.com/wmfs/pizza-blueprint/commit/0b75db0bf1a2826f1afaa666595445d8ad858af9))
+* **circle:** ensure postgres has tz set ([63e188c](https://github.com/wmfs/pizza-blueprint/commit/63e188c0e7f2a2b73f515de70e902b188c68319b))
+* **circle:** update build environment variable context name [ch2771] ([76a61de](https://github.com/wmfs/pizza-blueprint/commit/76a61de4e93717e96fdd7704d5674b523c6c59b1))
+* **circle:** update postgres config to 13.2 ([af4828e](https://github.com/wmfs/pizza-blueprint/commit/af4828eb74d604c6cfcb0b2d0826e945c03797fc))
+* **circle:** use tmpfs postgres image [ch2769] ([fc22ca7](https://github.com/wmfs/pizza-blueprint/commit/fc22ca7c004dd557aa1f52b6c38ad336dda8b0b4))
+
+
+### ♻️ Chores
+
+* remove test ([f33eb1e](https://github.com/wmfs/pizza-blueprint/commit/f33eb1e92d52e851afd9a4632c8af3c5e9f6575c))
+
 ## [1.8.2](https://github.com/wmfs/pizza-blueprint/compare/v1.8.1...v1.8.2) (2020-07-29)
 
 
