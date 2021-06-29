@@ -10,8 +10,7 @@
     "FormatTodoEntry": {
       "Type": "Task",
       "Resource": "function:pizza_generateChefTask",
-      "End": true,
-      "xNext": "CreateTodoEntry"
+      "Next": "CreateTodoEntry"
     },
     "CreateTodoEntry": {
       "Type": "Task",
