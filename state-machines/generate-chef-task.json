@@ -1,0 +1,31 @@
+{
+  "Comment": "Generate pizza order task for chefs.",
+  "name": "Generate Chef Task",
+  "version": "1.0",
+  "categories": [
+    "pizza"
+  ],
+  "StartAt": "FormatTodoEntry",
+  "States": {
+    "FormatTodoEntry": {
+      "Type": "Task",
+      "Resource": "function:pizza_generateChefTask",
+      "End": true,
+      "xNext": "CreateTodoEntry"
+    },
+    "CreateTodoEntry": {
+      "Type": "Task",
+      "InputPath": "$.todo",
+      "Resource": "module:createTodoEntry",
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "$everyone",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}

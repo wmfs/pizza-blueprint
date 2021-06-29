@@ -1,0 +1,12 @@
+{
+  "listener": "pizza_pizza_insert",
+  "actions": [
+    {
+      "type": "stateMachine",
+      "config": {
+        "stateMachineName": "pizza_generateChefTask_1_0",
+        "input": {}
+      }
+    }
+  ]
+}
