@@ -1,5 +1,5 @@
 {
-  "listener": "pizza_pizza_insert",
+  "listener": "pizza_pizza_beforeInsert",
   "actions": [
     {
       "type": "stateMachine",
