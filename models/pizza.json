@@ -99,6 +99,6 @@
   "listeners": [
     "beforeInsert",
     "beforeUpdate",
-    "beforeDelete"
+    "afterDelete"
   ]
 }
