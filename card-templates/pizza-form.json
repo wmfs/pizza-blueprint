@@ -38,7 +38,10 @@
         },
         {
           "type": "Input.TelephoneNumber",
-          "id": "phoneNumber"
+          "id": "phoneNumber",
+          "validation": {
+            "required": true
+          }
         },
         {
           "type": "Input.ChoiceSet",
