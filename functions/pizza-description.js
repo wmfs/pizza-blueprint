@@ -1,7 +1,7 @@
 module.exports = function () {
-  return function (formData) {
+  return function (event) {
     return {
-      description: `${formData.name}: ${formData.base}, ${formData.toppings.length > 0 ? formData.toppings.join(', ') : 'No Toppings'}`
+      description: `${event.name}: ${event.base}, ${event.toppings.length > 0 ? event.toppings.join(', ') : 'No Toppings'}`
     }
   }
 }

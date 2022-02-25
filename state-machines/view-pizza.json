@@ -14,7 +14,7 @@
       "ResourceConfig": {
         "modelId": "pizza"
       },
-      "ResultPath": "$.formData",
+      "ResultPath": "$",
       "Next": "AwaitingHumanInput"
     },
     "AwaitingHumanInput": {
@@ -23,9 +23,12 @@
       "ResourceConfig": {
         "uiType": "board",
         "uiName": "pizza_pizzaDetails",
-        "dataPath": "$.formData"
+        "uiListener": [
+          "pizza_pizza_beforeUpdate",
+          "pizza_pizza_afterDelete"
+        ],
+        "dataPath": "$"
       },
-      "ResultPath": "$.formData",
       "End": true
     }
   },

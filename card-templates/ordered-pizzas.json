@@ -9,6 +9,7 @@
     {
       "type": "List",
       "arrayPath": "data.pizzas",
+      "showLaunches": true,
       "templates": {
         "label": "Name: {{ item.name }}",
         "sublabel": [

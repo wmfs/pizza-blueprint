@@ -17,7 +17,39 @@
       "ResourceConfig": {
         "modelId": "pizza",
         "filter": {
-          "orderBy": ["-created"]
+          "orderBy": [
+            "-created"
+          ]
+        }
+      },
+      "ResultPath": "$.pizzas",
+      "Next": "AddLaunches"
+    },
+    "AddLaunches": {
+      "Type": "Map",
+      "InputPath": "$",
+      "ItemsPath": "$.pizzas",
+      "Iterator": {
+        "StartAt": "Pass",
+        "States": {
+          "Pass": {
+            "Type": "Pass",
+            "Parameters": {
+              "launches": [
+                {
+                  "title": "View",
+                  "stateMachineName": "pizza_viewPizza_1_0",
+                  "input": {
+                    "boardKeys": {
+                      "pizzaId.$": "$.id"
+                    }
+                  }
+                }
+              ]
+            },
+            "ResultPath": "$",
+            "End": true
+          }
         }
       },
       "ResultPath": "$.pizzas",
