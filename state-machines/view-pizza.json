@@ -24,8 +24,16 @@
         "uiType": "board",
         "uiName": "pizza_pizzaDetails",
         "uiListener": [
-          "pizza_pizza_beforeUpdate",
-          "pizza_pizza_afterDelete"
+          {
+            "event": "pizza_pizza_afterUpdate",
+            "keyMapping": {
+              "client": ["$.boardKeys.pizzaId"],
+              "server": ["$.id"]
+            }
+          },
+          {
+            "event": "pizza_pizza_afterDelete"
+          }
         ],
         "dataPath": "$"
       },

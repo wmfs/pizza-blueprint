@@ -63,7 +63,7 @@
         "uiName": "pizza_orderedPizzas",
         "uiListener": [
           "pizza_pizza_beforeInsert",
-          "pizza_pizza_beforeUpdate",
+          "pizza_pizza_afterUpdate",
           "pizza_pizza_afterDelete"
         ],
         "dataPath": "$"
