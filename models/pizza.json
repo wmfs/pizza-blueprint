@@ -95,10 +95,5 @@
   "required": [
     "name",
     "phoneNumber"
-  ],
-  "listeners": [
-    "beforeInsert",
-    "afterUpdate",
-    "afterDelete"
   ]
 }

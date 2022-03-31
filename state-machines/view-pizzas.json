@@ -62,9 +62,9 @@
         "uiType": "info",
         "uiName": "pizza_orderedPizzas",
         "uiListener": [
-          "pizza_pizza_beforeInsert",
-          "pizza_pizza_afterUpdate",
-          "pizza_pizza_afterDelete"
+          "model:pizza_pizza_beforeInsert",
+          "model:pizza_pizza_afterUpdate",
+          "model:pizza_pizza_afterDelete"
         ],
         "dataPath": "$"
       },

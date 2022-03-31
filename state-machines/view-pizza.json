@@ -25,14 +25,20 @@
         "uiName": "pizza_pizzaDetails",
         "uiListener": [
           {
-            "event": "pizza_pizza_afterUpdate",
-            "keyMapping": {
-              "client": ["$.boardKeys.pizzaId"],
-              "server": ["$.id"]
+            "topic": "model:pizza_pizza_afterUpdate",
+            "where": {
+              "id": {
+                "equals": "$.boardKeys.pizzaId"
+              }
             }
           },
           {
-            "event": "pizza_pizza_afterDelete"
+            "topic": "model:pizza_pizza_afterDelete",
+            "where": {
+              "id": {
+                "equals": "$.boardKeys.pizzaId"
+              }
+            }
           }
         ],
         "dataPath": "$"
