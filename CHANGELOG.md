@@ -1,3 +1,60 @@
+## [1.8.4](https://github.com/wmfs/pizza-blueprint/compare/v1.8.3...v1.8.4) (2023-01-05)
+
+
+### 🐛 Bug Fixes
+
+* changed 'telephonenumber' type in model from integer to string, as this was causing a scriptrunner fail warning on tymly boot ([fdc0ec1](https://github.com/wmfs/pizza-blueprint/commit/fdc0ec19cdc3dd2d33ef7559543ff10a32c9a3b7))
+
+
+### 🛠 Builds
+
+* **deps-dev:** bump codecov from 3.8.2 to 3.8.3 ([dbbc9cb](https://github.com/wmfs/pizza-blueprint/commit/dbbc9cb33c74352bcccb04125827725e48cba71c))
+* **deps-dev:** bump mocha from 8.3.2 to 9.0.2 ([a16eeed](https://github.com/wmfs/pizza-blueprint/commit/a16eeedc0f79a4147063746925382e8db634dcac))
+* **deps-dev:** bump mocha from 9.0.2 to 9.0.3 ([8bf0428](https://github.com/wmfs/pizza-blueprint/commit/8bf0428effb2325466745ce339f63a03b844d8df))
+* **deps-dev:** bump semantic-release from 17.4.3 to 17.4.4 ([cc816cb](https://github.com/wmfs/pizza-blueprint/commit/cc816cbf9d46482cd5e786e4fc382dca79bc5af7))
+* **deps-dev:** update dependency [@semantic-release](https://github.com/semantic-release)/changelog to v6 ([d2e8356](https://github.com/wmfs/pizza-blueprint/commit/d2e8356bf5ad1cf8ffd4726565d0348bce06b266))
+* **deps-dev:** update dependency [@semantic-release](https://github.com/semantic-release)/changelog to v6.0.2 ([50a55f7](https://github.com/wmfs/pizza-blueprint/commit/50a55f7b12b09086e3925ee340ae3be0f7312fcf))
+* **deps-dev:** update dependency [@semantic-release](https://github.com/semantic-release)/exec to v6 ([3e97c29](https://github.com/wmfs/pizza-blueprint/commit/3e97c293e4209dc6aaf5946523da82046e8a7f6e))
+* **deps-dev:** update dependency [@semantic-release](https://github.com/semantic-release)/exec to v6.0.3 ([5107c8d](https://github.com/wmfs/pizza-blueprint/commit/5107c8db044ecacde2d28ec8ebbc47b7e4c2a271))
+* **deps-dev:** update dependency [@semantic-release](https://github.com/semantic-release)/git to v10 ([73da431](https://github.com/wmfs/pizza-blueprint/commit/73da4311dfb6313c01b7c2012a65d0a303123e6a))
+* **deps-dev:** update dependency [@semantic-release](https://github.com/semantic-release)/git to v9.0.1 ([682b686](https://github.com/wmfs/pizza-blueprint/commit/682b6869958f6516e4d3f9d90859883172f12dcb))
+* **deps-dev:** update dependency chai to v4.3.5 ([d0188c0](https://github.com/wmfs/pizza-blueprint/commit/d0188c0a604373a5963dce84a0e33394189bb1d0))
+* **deps-dev:** update dependency chai to v4.3.6 ([2f5f49b](https://github.com/wmfs/pizza-blueprint/commit/2f5f49b5a738b59225954e8bb4da3cf41c9cef45))
+* **deps-dev:** update dependency chai to v4.3.7 ([3bf97d1](https://github.com/wmfs/pizza-blueprint/commit/3bf97d1ebf02515ae5980e471eddfeab2ed6090f))
+* **deps-dev:** update dependency mocha to v10 ([154cc5f](https://github.com/wmfs/pizza-blueprint/commit/154cc5f0e60782b8e25b79407e1f8aaecd4e3a56))
+* **deps-dev:** update dependency mocha to v10.1.0 ([15f67c4](https://github.com/wmfs/pizza-blueprint/commit/15f67c4989db99c77504648c815aae6d38f7d16a))
+* **deps-dev:** update dependency mocha to v10.2.0 ([217435d](https://github.com/wmfs/pizza-blueprint/commit/217435d72a287fbdbe933025bd1b7fffaf1ec48f))
+* **deps-dev:** update dependency mocha to v9.1.0 ([a278c6a](https://github.com/wmfs/pizza-blueprint/commit/a278c6a89a2cfc982d8fbbf3c7ab98a6c8f407ea))
+* **deps-dev:** update dependency mocha to v9.1.1 ([c9fdefd](https://github.com/wmfs/pizza-blueprint/commit/c9fdefd5792e12eb6ad09bb2fd303cb6b2eb88d2))
+* **deps-dev:** update dependency mocha to v9.1.2 ([17b4884](https://github.com/wmfs/pizza-blueprint/commit/17b48841df9031ae097f166b09ecc71170145b75))
+* **deps-dev:** update dependency mocha to v9.1.3 ([58feb18](https://github.com/wmfs/pizza-blueprint/commit/58feb18efefea66d00deb5d34fe7483190f59d3e))
+* **deps-dev:** update dependency mocha to v9.1.4 ([a3d388c](https://github.com/wmfs/pizza-blueprint/commit/a3d388c691c37c4d6cb1948efac3df15c84cd339))
+* **deps-dev:** update dependency mocha to v9.2.0 ([18e695d](https://github.com/wmfs/pizza-blueprint/commit/18e695d28fe4b17d5599a843e73deef1ae37f15e))
+* **deps-dev:** update dependency mocha to v9.2.1 ([9b3ffd4](https://github.com/wmfs/pizza-blueprint/commit/9b3ffd49c03e3a49418f3901098b46c2cf0de46f))
+* **deps-dev:** update dependency mocha to v9.2.2 ([fefdc58](https://github.com/wmfs/pizza-blueprint/commit/fefdc586f35668114b826bc76f2b29fa401e389d))
+* **deps-dev:** update dependency semantic-release to v17.4.5 ([f09e616](https://github.com/wmfs/pizza-blueprint/commit/f09e6167356040c623225e57b91623f24d174cd3))
+* **deps-dev:** update dependency semantic-release to v17.4.6 ([4dbc675](https://github.com/wmfs/pizza-blueprint/commit/4dbc675acbf0f1efd92157b626b44924fabcfeeb))
+* **deps-dev:** update dependency semantic-release to v17.4.7 ([acd9e27](https://github.com/wmfs/pizza-blueprint/commit/acd9e27b10abdee60e30ff121404bc29212d881c))
+* **deps-dev:** update dependency semantic-release to v18 ([25846a8](https://github.com/wmfs/pizza-blueprint/commit/25846a83def5159dbf1ab94de4a17a8390a7a049))
+* **deps-dev:** update dependency semantic-release to v18.0.1 ([5bda244](https://github.com/wmfs/pizza-blueprint/commit/5bda244742c931289408a745bb822dbbbe8efb11))
+* **deps-dev:** update dependency semantic-release to v19 ([22c0b2b](https://github.com/wmfs/pizza-blueprint/commit/22c0b2be0bc1a35793cd788703079ea3ab80b399))
+* **deps-dev:** update dependency semantic-release to v19.0.3 ([4ffab90](https://github.com/wmfs/pizza-blueprint/commit/4ffab90dd978155ae3134c418f39debca0a6eb42))
+* **deps-dev:** update dependency semantic-release to v19.0.5 ([3fe9cd5](https://github.com/wmfs/pizza-blueprint/commit/3fe9cd54af4732bc6ad162a06cdf6ad1fbf0faf1))
+* **deps-dev:** update dependency standard to v16.0.4 ([06ed7c2](https://github.com/wmfs/pizza-blueprint/commit/06ed7c2553fffd7c7d0d98d512c3e8ae453a819a))
+* **deps-dev:** update dependency standard to v17 ([16119d0](https://github.com/wmfs/pizza-blueprint/commit/16119d0d94ad1ade56983be31ee099c226057469))
+* **deps-dev:** update semantic-release monorepo ([94af059](https://github.com/wmfs/pizza-blueprint/commit/94af059bba97f718217397152791ad690b65f418))
+
+
+### ⚙️ Continuous Integrations
+
+* **circle:** add build-env-vars context [sc-11392] ([baf2829](https://github.com/wmfs/pizza-blueprint/commit/baf2829a0ebe42808b57fbcad81565cecf8d2b98))
+* **circle:** update npm install command [sc-11392] ([c022c2f](https://github.com/wmfs/pizza-blueprint/commit/c022c2f2fbdb96b596c548eca874ccfb37d14d19))
+
+
+### ♻️ Chores
+
+* add renovate config [ch6600] ([61c50da](https://github.com/wmfs/pizza-blueprint/commit/61c50da5c5f49ff41c32d27e1334371fd459c2d0))
+
 ## [1.8.3](https://github.com/wmfs/pizza-blueprint/compare/v1.8.2...v1.8.3) (2021-06-21)
 
 
