@@ -14,7 +14,7 @@
     },
     "phoneNumber": {
       "title": "Phone number",
-      "type": "integer"
+      "type": "string"
     },
     "dietaryReq": {
       "title": "Dietary requirements",
