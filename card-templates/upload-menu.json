@@ -62,6 +62,6 @@
       "title": "Close"
     }
   ],
-  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "$schema": "https://raw.githubusercontent.com/wmfs/cardscript-schema/master/lib/schema.json",
   "version": "1.0"
 }
