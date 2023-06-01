@@ -1,3 +1,27 @@
+# [1.9.0](https://github.com/wmfs/pizza-blueprint/compare/v1.8.4...v1.9.0) (2023-06-01)
+
+
+### ✨ Features
+
+* updated schema for cardscript files ([d58d9e8](https://github.com/wmfs/pizza-blueprint/commit/d58d9e8ba5070ea3310e935128a39eb7bc0842e8))
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dependency [@semantic-release](https://github.com/semantic-release)/changelog to v6.0.3 ([43261a1](https://github.com/wmfs/pizza-blueprint/commit/43261a1fd2862b9eb5f1c55adc8ee6d670a5aab3))
+* **deps-dev:** update dependency semantic-release to v20 ([7534db2](https://github.com/wmfs/pizza-blueprint/commit/7534db2a9b8ff31860257460d25a58996a09d5ed))
+* **deps-dev:** update dependency semantic-release to v20.0.1 ([650634a](https://github.com/wmfs/pizza-blueprint/commit/650634a1c9de5803fc315650d0804b1e9b7b0c7c))
+* **deps-dev:** update dependency semantic-release to v20.0.2 ([a0d5a91](https://github.com/wmfs/pizza-blueprint/commit/a0d5a915fdec2a862214c745c6108f947685eb98))
+* **deps-dev:** update dependency semantic-release to v20.0.3 ([b4d99e5](https://github.com/wmfs/pizza-blueprint/commit/b4d99e5a3aefbba2953da821a432d7970128443c))
+* **deps-dev:** update dependency semantic-release to v20.0.4 ([941f686](https://github.com/wmfs/pizza-blueprint/commit/941f686197506d5ee0a80bbadd920f1ee57e56ba))
+* **deps-dev:** update dependency semantic-release to v20.1.0 ([ea68e44](https://github.com/wmfs/pizza-blueprint/commit/ea68e44fa25a0f45847c58b49477d3a47ad23ef4))
+* **deps-dev:** update dependency semantic-release to v20.1.1 ([6f32c5d](https://github.com/wmfs/pizza-blueprint/commit/6f32c5dcbf82403776bfcea4ac39e9e00dc1428d))
+* **deps-dev:** update dependency semantic-release to v20.1.3 ([2ee5366](https://github.com/wmfs/pizza-blueprint/commit/2ee53668fa7eb97bd464610d4643bfd4d11d2e66))
+* **deps-dev:** update dependency semantic-release to v21 ([556a4b3](https://github.com/wmfs/pizza-blueprint/commit/556a4b3bc6d81a890d51a756ecaf24039dfb4c95))
+* **deps-dev:** update dependency semantic-release to v21.0.1 ([49da631](https://github.com/wmfs/pizza-blueprint/commit/49da631c5919f91dae9863d33acc0f52e70c98c1))
+* **deps-dev:** update dependency semantic-release to v21.0.2 ([64cbd03](https://github.com/wmfs/pizza-blueprint/commit/64cbd03954b10c8f14ffa8f609cf33ad781fbd1a))
+* **deps-dev:** update dependency standard to v17.1.0 ([ff134b1](https://github.com/wmfs/pizza-blueprint/commit/ff134b155a81854d5797518984809cca3f2a6173))
+
 ## [1.8.4](https://github.com/wmfs/pizza-blueprint/compare/v1.8.3...v1.8.4) (2023-01-05)
 
 
