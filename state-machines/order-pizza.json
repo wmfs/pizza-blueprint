@@ -17,14 +17,19 @@
       "ResourceConfig": {
         "uiType": "form",
         "uiName": "pizza_pizzaForm",
-        "dataPath": "$.formData"
+        "dataPath": "$"
       },
-      "ResultPath": "$.formData",
+      "Next": "SetStatus"
+    },
+    "SetStatus": {
+      "Type": "Pass",
+      "Result": "PENDING",
+      "ResultPath": "$.status",
       "Next": "Upserting"
     },
     "Upserting": {
       "Type": "Task",
-      "InputPath": "$.formData",
+      "InputPath": "$",
       "Resource": "module:upserting",
       "ResourceConfig": {
         "modelId": "pizza"

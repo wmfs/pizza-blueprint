@@ -1,0 +1,82 @@
+{
+  "Comment": "View ordered pizzas",
+  "name": "View Ordered Pizzas",
+  "version": "1.0",
+  "categories": [
+    "pizza"
+  ],
+  "instigators": [
+    "user"
+  ],
+  "instigatorGroup": "app",
+  "StartAt": "Find",
+  "States": {
+    "Find": {
+      "Type": "Task",
+      "Resource": "module:finding",
+      "ResourceConfig": {
+        "modelId": "pizza",
+        "filter": {
+          "orderBy": [
+            "-created"
+          ]
+        }
+      },
+      "ResultPath": "$.pizzas",
+      "Next": "AddLaunches"
+    },
+    "AddLaunches": {
+      "Type": "Map",
+      "InputPath": "$",
+      "ItemsPath": "$.pizzas",
+      "Iterator": {
+        "StartAt": "Pass",
+        "States": {
+          "Pass": {
+            "Type": "Pass",
+            "Parameters": {
+              "launches": [
+                {
+                  "title": "View",
+                  "stateMachineName": "pizza_viewPizza_1_0",
+                  "input": {
+                    "boardKeys": {
+                      "pizzaId.$": "$.id"
+                    }
+                  }
+                }
+              ]
+            },
+            "ResultPath": "$",
+            "End": true
+          }
+        }
+      },
+      "ResultPath": "$.pizzas",
+      "Next": "AwaitingHumanInput"
+    },
+    "AwaitingHumanInput": {
+      "Type": "Task",
+      "Resource": "module:awaitingHumanInput",
+      "ResourceConfig": {
+        "uiType": "info",
+        "uiName": "pizza_orderedPizzas",
+        "uiListener": [
+          "model:pizza_pizza_beforeInsert",
+          "model:pizza_pizza_afterUpdate",
+          "model:pizza_pizza_afterDelete"
+        ],
+        "dataPath": "$"
+      },
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "pizza_chef",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}
