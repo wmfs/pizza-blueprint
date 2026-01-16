@@ -103,7 +103,7 @@
           "showWhen": "data.dietaryReq.includes('OTHER')"
         }
       ],
-      "showWhen": "data.dietaryReq.length > 0"
+      "showWhen": "Array.isArray(data.dietaryReq) && data.dietaryReq.length > 0"
     },
     {
       "type": "Container",
@@ -135,7 +135,7 @@
                 },
                 {
                   "title": "Toppings",
-                  "value": "{{data.toppings.length > 0 ? data.toppings.join(', ') : 'n/a'}}"
+                  "value": "{{ Array.isArray(data.toppings) && data.toppings.length > 0 ? data.toppings.join(', ') : 'n/a'}}"
                 },
                 {
                   "type": "FactSet",
@@ -190,7 +190,7 @@
       "stateMachineName": "pizza_amendPizza_1_0",
       "input": {
         "boardKeys": {
-          "pizzaId": "${data.id}"
+          "pizzaId": "$.id"
         }
       }
     },
@@ -198,7 +198,12 @@
       "type": "Action.PushCard",
       "title": "Cancel Order",
       "showWhen": "data.status === 'PENDING'",
-      "stateMachineName": "pizza_cancelOrder_1_0"
+      "stateMachineName": "pizza_cancelOrder_1_0",
+      "input": {
+        "boardKeys": {
+          "pizzaId": "$.id"
+        }
+      }
     }
   ],
   "$schema": "https://raw.githubusercontent.com/wmfs/cardscript-schema/master/lib/schema.json",

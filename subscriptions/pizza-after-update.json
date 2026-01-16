@@ -1,0 +1,6 @@
+{
+  "title": "Subscription to pizza updates",
+  "source": "model",
+  "sourceId": "pizza_pizza",
+  "event": "afterUpdate"
+}

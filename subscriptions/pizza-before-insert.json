@@ -1,0 +1,6 @@
+{
+  "title": "Subscription to pizza inserts",
+  "source": "model",
+  "sourceId": "pizza_pizza",
+  "event": "beforeInsert"
+}
