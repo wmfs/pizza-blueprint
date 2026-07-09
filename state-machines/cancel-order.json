@@ -14,7 +14,7 @@
       "ResourceConfig": {
         "modelId": "pizza"
       },
-      "ResultPath": "$.formData",
+      "ResultPath": "$",
       "Next": "AwaitingHumanInput"
     },
     "AwaitingHumanInput": {
@@ -23,22 +23,19 @@
       "ResourceConfig": {
         "uiType": "form",
         "uiName": "pizza_cancelForm",
-        "dataPath": "$.formData"
+        "dataPath": "$"
       },
-      "ResultPath": "$.formData",
       "Next": "SetStatusCancelled"
     },
     "SetStatusCancelled": {
-      "Type": "Task",
-      "Resource": "module:runFunction",
-      "ResourceConfig": {
-        "functionName": "setStatusCancelled"
-      },
+      "Type": "Pass",
+      "Result": "CANCELLED",
+      "ResultPath": "$.status",
       "Next": "Upserting"
     },
     "Upserting": {
       "Type": "Task",
-      "InputPath": "$.formData",
+      "InputPath": "$",
       "Resource": "module:upserting",
       "ResourceConfig": {
         "modelId": "pizza"

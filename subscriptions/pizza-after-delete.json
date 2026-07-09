@@ -1,0 +1,6 @@
+{
+  "title": "Subscription to pizza deletes",
+  "source": "model",
+  "sourceId": "pizza_pizza",
+  "event": "afterDelete"
+}

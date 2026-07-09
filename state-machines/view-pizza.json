@@ -14,7 +14,7 @@
       "ResourceConfig": {
         "modelId": "pizza"
       },
-      "ResultPath": "$.formData",
+      "ResultPath": "$",
       "Next": "AwaitingHumanInput"
     },
     "AwaitingHumanInput": {
@@ -23,9 +23,26 @@
       "ResourceConfig": {
         "uiType": "board",
         "uiName": "pizza_pizzaDetails",
-        "dataPath": "$.formData"
+        "uiListener": [
+          {
+            "topic": "model:pizza_pizza_afterUpdate",
+            "where": {
+              "id": {
+                "equals": "$.boardKeys.pizzaId"
+              }
+            }
+          },
+          {
+            "topic": "model:pizza_pizza_afterDelete",
+            "where": {
+              "id": {
+                "equals": "$.boardKeys.pizzaId"
+              }
+            }
+          }
+        ],
+        "dataPath": "$"
       },
-      "ResultPath": "$.formData",
       "End": true
     }
   },

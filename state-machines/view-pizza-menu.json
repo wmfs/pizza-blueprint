@@ -8,6 +8,7 @@
   "instigators": [
     "user"
   ],
+  "instigatorGroup": "app",
   "StartAt": "ListMenus",
   "States": {
     "ListMenus": {

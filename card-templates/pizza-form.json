@@ -4,6 +4,18 @@
     "title": "Pizza Place",
     "category": "pizza"
   },
+  "hooks": {
+    "afterSubmit": {
+      "actions": [
+        {
+          "type": "Action.RefreshWatching"
+        },
+        {
+          "type": "Action.RefreshTasks"
+        }
+      ]
+    }
+  },
   "type": "AdaptiveCard",
   "body": [
     {
@@ -38,7 +50,10 @@
         },
         {
           "type": "Input.TelephoneNumber",
-          "id": "phoneNumber"
+          "id": "phoneNumber",
+          "validation": {
+            "required": true
+          }
         },
         {
           "type": "Input.ChoiceSet",
