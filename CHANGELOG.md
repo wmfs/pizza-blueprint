@@ -1,3 +1,5 @@
+## [1.11.1](https://github.com/wmfs/pizza-blueprint/compare/v1.11.0...v1.11.1) (2026-08-12)
+
 ## [1.11.0](https://github.com/wmfs/pizza-blueprint/compare/v1.10.0...v1.11.0) (2025-10-21)
 
 ### Build system dependencies :hammer:
