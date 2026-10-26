@@ -1,4 +1,6 @@
 version: 2.1
+orbs:
+  gh-app: wmfs/github-app-token@1.0.0
 jobs:
   lint:
     docker:
@@ -41,6 +43,7 @@ jobs:
           key: v1-deps-{{ checksum "package.json" }}
           paths:
             - node_modules
+      - gh-app/mint
       - run:
           name: release
           command: |
@@ -57,6 +60,7 @@ workflows:
         context:
           - docker-hub-creds
           - build-env-vars
+          - github-app
         requires:
         - lint
         filters:
